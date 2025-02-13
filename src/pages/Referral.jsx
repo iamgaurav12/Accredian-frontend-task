@@ -20,7 +20,7 @@ function Referral({ openModal, setOpenModal }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("https://accredian-backend-task-ufws.onrender.com/create", {
+      const res = await fetch("https://accredian-backend-task-ufws.onrender.com/api/referral/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
