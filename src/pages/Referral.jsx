@@ -20,7 +20,7 @@ function Referral({ openModal, setOpenModal }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3000/api/referral/create", {
+      const res = await fetch("https://accredian-frontend-task-pink.vercel.app/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
